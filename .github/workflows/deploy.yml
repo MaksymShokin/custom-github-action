@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
+        with:
+          caching: 'false'
       - name: Get and cache dependencies
         uses: ./.github/actions/cache-deps
       - name: Lint code
