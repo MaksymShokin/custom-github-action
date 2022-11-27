@@ -1,0 +1,5 @@
+name: Simple action
+description: Simple action to output text
+runs:
+  using: 'node16'
+  main: 'main.js'
